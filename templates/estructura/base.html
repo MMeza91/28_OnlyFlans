@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% include 'estructura/scripts.html' %}
+</head>
+<body>
+    {% include 'estructura/nav.html' %}
+
+    {% block content %}
+    contenido dinamico de la web y que por ende, no se heredará
+    {% endblock %}
+
+    {% include 'estructura/footer.html' %}    
+</body>
+</html>
